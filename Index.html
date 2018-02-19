@@ -1,62 +1,117 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="CSS/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="JS/main.js"></script>
-    </head>
+</head>
+<style>
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	padding-top:10%;
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:contain;
+}
+
+#logo{
+	width:15%;
+	position:fixed;
+	margin:2.5%;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+.categories{
+	position: relative;
+	display:inline-block;
+	width:95%;
+	height:20%;
+	margin:2.5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+.categories img{
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	left:0;
+	top:0;
+	margin:0;
+	padding:0;
+}
+
+.categories #content{
+	position:relative;
+	display:inline-block;
+	width: 55%;
+	height:80%;
+	top:10%;
+	left:40%;
+}
+
+.categories #content button{
+	position:absolute;
+	top:25%;
+	height:50%;
+	right:0;
+	background-color:green;
+	color:white;
+	border-style:none;
+	margin:0;
+	width:40%;
+	font-size:1.5em;
+}
+
+.categories #content h2{
+	display:inline-block;
+	position:relative;
+	top:25%;
+}
+
+</style>
+
 <body>
-    <img id="hero" src="http://www.intrawallpaper.com/static/images/mobileswall-047_lK8eXKN.jpg">
-    <img class="icons" id="ham-menu" src="ICONS/menu.svg">
-    <h1 id="hero_text">A Hero Image<br>to greet the user</h1>
-    <nav id="menu">
-        <img class="icons" src="ICONS/home.svg">
-        <img class="icons" src="ICONS/info.svg">
-        <img class="icons" src="ICONS/announcement.svg">
-    </nav>
-    <div id="container"> 
-        
-        <h1>Main Title</h1><hr>
-        
-        <p>
-            Some introductory content about the purpose of this website.</p>
-        <p>
-            Some more paragraphs before the first image to show some variety in what the formatting
-            can look like.
-        </p>
-        
-        <div class="carousel">
-            <img class="carousel_image" src="https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/niagara-falls-state-park/photos-and-videos/photo-gallery-7.jpg">
-            <img class="carousel_image" src="http://newsroom.unfccc.int/media/777629/flickr_projoshua-mayer_cpforets.jpg">
-            <img class="carousel_image" src="https://cdn.vox-cdn.com/thumbor/Qe8tpXl4fzCn2m4lWDEvLqh_e_w=/39x0:664x469/1200x800/filters:focal(39x0:664x469)/cdn.vox-cdn.com/uploads/chorus_image/image/47855907/Screen_20Shot_202015-11-25_20at_208.46.00_20AM.0.png">
-            <footer>Image text goes here</footer>
-        </div>
-        
-        <h1>Dynamic text boxes</h1>
-        <div class="news_box">
-            <header>
-                <a>Tab1</a>
-                <a>Tab2</a>
-                <a>Tab3</a>
-            </header>
-            <hr>
-            <div>
-            <marquee behavior="scroll" direction="up" scrollamount="7">
-                <p>
-                    Point1: An example of boxes which have content that changes often, like news, current events, etc.</p>
-                <p>
-                    Point2: An example of boxes which have content that changes often, like news, current events, etc.</p>
-            </marquee>
-            </div>
-        </div>
-        
-        <div id="important_links">
-            <h2>Important links</h2><hr>
-            <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a><br>
-            <a href="https://www.google.co.in">Google</a><br>
-            <a href="https://www.facebook.com/">Facebook</a>
-        </div>
-    </div>
-    </body>
+<img id="logo" src="img/logo.png">
+<div class="categories">
+<img src="img/event.JPG">
+<div id="content">
+<h2>TITLE</h2>
+<button>I'm Going</button>
+</div>
+</div>
+<img id="logo" src="img/logo.png">
+<div class="categories">
+<img src="img/event.JPG">
+<div id="content">
+<h2>TITLE</h2>
+<button>I'm Going</button>
+</div>
+</div><img id="logo" src="img/logo.png">
+<div class="categories">
+<img src="img/event.JPG">
+<div id="content">
+<h2>TITLE</h2>
+<button>I'm Going</button>
+</div>
+</div><img id="logo" src="img/logo.png">
+<div class="categories">
+<img src="img/event.JPG">
+<div id="content">
+<h2>TITLE</h2>
+<button>I'm Going</button>
+</div>
+</div><img id="logo" src="img/logo.png">
+<div class="categories">
+<img src="img/event.JPG">
+<div id="content">
+<h2>TITLE</h2>
+<button>I'm Going</button>
+</div>
+</div>
+</body>
 </html>
