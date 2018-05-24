@@ -1,12 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
 #content{
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
-    width: 80%;
-    background-color: blue;
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
 }
 
 #about{
-    position: absolute;
+    position: fixed;
     top: 0;
+    width: 0;
+    height: 100%;
+    left: 90%;
+}
+
+#nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    padding-top: 55vh;
+}
+
+.right-nav{
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    font-weight: bold;
+    border-style: none;
+    border-right-style: solid;
+    border-right-color: blue;
+    border-right-width: 3px;
+    padding: 10%;
+}
+
+#account{
+    position: fixed;
+    top: 30%;
+    right: 7.5%;
+    width: 5%;
+}
+
+.background-attached{
+    background-attachment: fixed;
+    width: 100%;
+    height: 70%;
+}
+
+.test{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    color: rgb(32, 32, 32);
+    padding: 5%;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
