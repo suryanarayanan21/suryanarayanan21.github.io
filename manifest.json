@@ -1,12 +1,12 @@
 {
-  "name": "APP",
-  "short_name": "app",
+  "name": "Nugget",
+  "short_name": "nugget",
   "start_url": "./index.html",
   "display": "standalone",
   "description": "A demo app",
   "icons": [
     {
-      "src": "IMG/RESUME.png",
+      "src": "IMG/logo1.png",
       "sizes": "512x512",
       "type": "image/png"
     }
