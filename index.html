@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -19,7 +22,7 @@
   <body>
     <div class="container-fluid">
         <div class="row pt-3 pb-3 sticky-top" style="background-color: white;">
-            <div class="col-sm-12 col-md-8">
+            <div class="col-sm-12 col-md-8 align-self-center">
                 <div class="clearfix">
                     <img src="IMG/logo.png" id="logo-img" class="float-left"/>
                     <a href="#" style="color: rgb(73, 73, 73); text-decoration: none;" class="float-right">SETTINGS</a>
@@ -64,6 +67,27 @@
         </div>
 
     </div>
+
+    <!-- Service worker -->
+    <script>
+
+        window.addEventListener('load', e => {
+            registerSW();
+        });
+        
+        async function registerSW(){
+            if ('serviceWorker' in navigator) { // (2)
+                try {
+                    await navigator.serviceWorker.register('./sw.js'); // (3)
+                } catch (e) {
+                    alert('ServiceWorker registration failed. Sorry about that.'); // (4)
+                }
+            } else {
+                document.querySelector('.alert').removeAttribute('hidden'); //(5)
+            }    
+        }
+
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
