@@ -1,37 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- OWL corousel -->
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/main.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row pt-3 pb-3 sticky-top" style="background-color: white;">
+            <div class="col-sm-12 col-md-8">
+                <div class="clearfix">
+                    <img src="IMG/logo.png" id="logo-img" class="float-left"/>
+                    <a href="#" style="color: rgb(73, 73, 73); text-decoration: none;" class="float-right">SETTINGS</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <input type="text" class="rounded w-100 mt-3 mt-md-0" id="search-bar">
+            </div>
+        </div>
+
+        <div class="row" id="subbed-content">
+            <div class="col-12 pt-3" style="background-color: grey; color: white">
+                <h6>SUBSCRIBED</h6>
+            </div>
+            <div class="col-12 pt-3 pb-3" style="background-color: grey;">
+                <div class="owl-carousel">
+
+                    <div class="item card" style="width: 200px;">
+                        <img src="IMG/thumbnail.jpg" class="card-img-top w-100" alt="thumbnail" />
+                        <div class="card-footer">
+                            <p class="card-text">COURSE NAME</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item card" style="width: 200px;">
+                        <img src="IMG/thumbnail.jpg" class="card-img-top w-100" alt="thumbnail" />
+                        <div class="card-footer">
+                            <p class="card-text">COURSE NAME</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="item card" style="width: 200px;">
+                        <img src="IMG/thumbnail.jpg" class="card-img-top w-100" alt="thumbnail" />
+                        <div class="card-footer">
+                            <p class="card-text">COURSE NAME</p>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- OWL carousel -->
+    <script src="JS/owl.carousel.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="JS/main.js"></script>
 
-    <link rel="stylesheet" type="text/CSS" href="CSS/main.css">
-</head>
-<body>
-    <div 
-    class="background-attached" 
-    style="background-image: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.6)), url(IMG/HERO.jpg); height: 100%">
-        <div id="about">
-            <img src="IMG/account1.png">
-            <h1>Hello,</h1>
-        </div>
-        <div id="contact-button">CONTACT ></div>
-    </div>
-    <div class="test">
-        <div ></div>
-    </div>
-
-    <div class="background-attached" style="background-image: url(IMG/HERO2.jpg)"></div>
-    <div class="test">Simple paragraph</div>
-
-    <div class="background-attached" style="background-image: url(IMG/HERO.jpg)"></div>
-    <div class="test">Simple paragraph</div>
-
-    <div class="background-attached" style="background-image: url(IMG/HERO2.jpg)"></div>
-    <div class="test">Simple paragraph</div>
-    
-</body>
+  </body>
 </html>
